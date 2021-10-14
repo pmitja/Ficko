@@ -218,29 +218,29 @@
 /* CENIK SECTION */
 /************************************/
 
-.section-pricing {
+.cenik-section {
   padding: 9.6rem 0;
 }
 
-.pricing-plan {
+.cenik-plan {
   border-radius: 11px;
   width: 75%;
 }
 
-.pricing-plan--starter {
+.cenik-plan--zacetni {
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
 
-.pricing-plan--complete {
+.cenik-plan--popoln {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.pricing-plan--complete::after {
+.cenik-plan--popoln::after {
   content: "Top izbira";
   position: absolute;
   top: 6%;
@@ -269,14 +269,14 @@
   margin-bottom: 3.2rem;
 }
 
-.plan-price {
+.plan-cena {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
 }
 
-.plan-price span {
+.plan-cena span {
   font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
