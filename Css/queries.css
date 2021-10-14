@@ -240,7 +240,7 @@
     gap: 1.2rem;
   }
 
-  .gallery:nth-child(2) {
+  .second {
     grid-row: 2;
   }
 
@@ -251,5 +251,9 @@
   .cta-img-box {
     height: 32rem;
     grid-row: 1;
+  }
+
+  .cenik-section {
+    margin-bottom: 12.8rem;
   }
 }
