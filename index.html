@@ -37,13 +37,17 @@
       <a href="#"> <img src="img/logo.png" alt="Ficko logo" class="logo" /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Ponudba</a></li>
-          <li><a href="#" class="main-nav-link">Praznovanja</a></li>
-          <li><a href="#" class="main-nav-link">Cenik</a></li>
-          <li><a href="#" class="main-nav-link">Pravila</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Rezerviraj</a></li>
+          <li><a href="#ponudba" class="main-nav-link">Ponudba</a></li>
+          <li><a href="#praznovanja" class="main-nav-link">Praznovanja</a></li>
+          <li><a href="#cenik" class="main-nav-link">Cenik</a></li>
+          <li><a href="#pravila" class="main-nav-link">Pravila</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Rezerviraj</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -58,8 +62,8 @@
             </p>
 
             <p class="hero-name">&mdash; Saša V.</p>
-            <a href="#" class="btn btn--full margin-right-sm">Rezerviraj</a>
-            <a href="#" class="btn btn--outline">Več &darr;</a>
+            <a href="#cta" class="btn btn--full margin-right-sm">Rezerviraj</a>
+            <a href="#ponudba" class="btn btn--outline">Več &darr;</a>
           </div>
           <div class="hero-img-box">
             <img
@@ -71,7 +75,7 @@
         </div>
       </section>
 
-      <section class="storitev-section">
+      <section class="storitev-section" id="ponudba">
         <div class="container">
           <span class="subheading">Ponudba pri Ficku</span>
           <h2 class="heading-secondary">
@@ -115,7 +119,7 @@
         </div>
       </section>
 
-      <section class="praznovanja-section">
+      <section class="praznovanja-section" id="praznovanja">
         <div class="container">
           <span class="subheading">Praznovanja</span>
           <h2 class="heading-secondary">Izbiraj med programi praznovanja</h2>
@@ -364,7 +368,7 @@
         </div>
       </section>
 
-      <section class="pravila-section">
+      <section class="pravila-section" id="pravila">
         <div class="pravila-text-box">
           <span class="subheading">Pravila</span>
           <h2 class="heading-secondary">Za varno zabavo poskrbijo pravila</h2>
