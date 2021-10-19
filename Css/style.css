@@ -421,7 +421,7 @@
       rgba(252, 196, 25, 0.35),
       rgba(255, 236, 153, 0.35)
     ),
-    url("../img/blow.jpg");
+    url("../img/blow.webp");
   background-size: cover;
   background-position: center;
 }
