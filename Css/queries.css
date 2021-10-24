@@ -10,6 +10,10 @@
   .heading-primary {
     font-size: 4.4rem;
   }
+
+  .izleti {
+    align-self: center;
+  }
 }
 
 /************************************/
@@ -44,6 +48,10 @@
 
   .main-nav-list {
     gap: 4.8rem;
+  }
+
+  .izleti {
+    align-self: center;
   }
 }
 
@@ -144,6 +152,10 @@
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+
+  .izleti {
+    align-self: center;
+  }
 }
 
 /************************************/
@@ -183,8 +195,16 @@
     padding: 1.6rem 2.4rem 2.4rem 2.4rem;
   }
 
-  .pravila-section {
+  .izleti-section {
     grid-template-columns: 1fr;
+  }
+
+  .card-paragraph {
+    font-size: 2rem;
+  }
+
+  .izleti {
+    align-self: center;
   }
 }
 
@@ -229,7 +249,7 @@
     transform: translateY(2.4rem);
   }
 
-  .pravila-section {
+  .izleti-section {
     grid-template-columns: 1fr;
   }
 

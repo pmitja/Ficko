@@ -175,8 +175,24 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
+.margin-top-sm {
+  margin-top: 2.4rem;
+}
+
+.margin-top-md {
+  margin-top: 12.8rem;
+}
+
+.end-align {
+  justify-items: end;
+}
+
 .center-text {
   text-align: center;
+}
+
+.hide {
+  display: none;
 }
 
 .btn--form {

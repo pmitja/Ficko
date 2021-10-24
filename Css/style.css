@@ -230,6 +230,7 @@
   display: block;
   width: 100%;
   transition: all 0.4s;
+  background-size: cover;
 }
 
 .list-heading {
@@ -337,11 +338,30 @@
   text-align: center;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4.8rem;
+}
+
+.dot-one,
+.dot-two,
+.dot-three {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #fcc419;
+  border-radius: 50%;
+  display: inline-block;
+}
+.active {
+  background-color: #fff;
+}
+
 /************************************/
-/* PRAVILA SECTION */
+/* IZLETI SECTION */
 /************************************/
 
-.pravila-section {
+.izleti-section {
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: 45fr 55fr;
@@ -349,20 +369,25 @@
   margin-bottom: 12.8rem;
 }
 
-.pravila-text-box {
+.izleti-text-box {
   padding: 9.6rem;
 }
 
-.pravila-img-box {
+.izleti-img-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
 
-.pravila-img-box figure img {
+.izleti-img-box figure img {
   width: 100%;
   overflow: hidden;
+}
+
+.izleti-description {
+  font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 /************************************/
