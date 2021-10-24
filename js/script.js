@@ -37,7 +37,6 @@ const sectionHeroEl = document.querySelector(".hero-section");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
 
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
@@ -58,6 +57,7 @@ obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -70,10 +70,61 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
 
-// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+///////////////////////////////////////////////////////////
+// Buttons under price
+
+const dot1 = document.querySelector(".dot-one");
+const dot2 = document.querySelector(".dot-two");
+const dot3 = document.querySelector(".dot-three");
+
+const first = document.querySelector(".first-price");
+const second = document.querySelector(".second-price");
+const third = document.querySelector(".third-price");
+
+dot1.addEventListener("click", () => {
+  if (dot2.classList.contains("active")) {
+    dot2.classList.remove("active");
+    dot1.classList.add("active");
+  }
+  if (dot3.classList.contains("active")) {
+    dot3.classList.remove("active");
+    dot1.classList.add("active");
+  }
+  second.classList.add("hide");
+  third.classList.add("hide");
+  first.classList.remove("hide");
+});
+
+dot2.addEventListener("click", () => {
+  if (dot1.classList.contains("active")) {
+    dot1.classList.remove("active");
+    dot2.classList.add("active");
+  }
+  if (dot3.classList.contains("active")) {
+    dot3.classList.remove("active");
+    dot2.classList.add("active");
+  }
+
+  second.classList.remove("hide");
+  third.classList.add("hide");
+  first.classList.add("hide");
+});
+
+dot3.addEventListener("click", () => {
+  if (dot1.classList.contains("active")) {
+    dot1.classList.remove("active");
+    dot3.classList.add("active");
+  }
+  if (dot2.classList.contains("active")) {
+    dot2.classList.remove("active");
+    dot3.classList.add("active");
+  }
+  second.classList.add("hide");
+  third.classList.remove("hide");
+  first.classList.add("hide");
+});
