@@ -277,4 +277,8 @@
   .cenik-section {
     margin-bottom: 12.8rem;
   }
+
+  .about-img img {
+    width: 50%;
+  }
 }
