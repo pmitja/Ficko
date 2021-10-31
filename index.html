@@ -44,8 +44,9 @@
       <a href="#"> <img src="img/logo.png" alt="Ficko logo" class="logo" /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#ponudba" class="main-nav-link">Storitve</a></li>
-          <li><a href="#praznovanja" class="main-nav-link">Ponudba</a></li>
+          <li><a href="#about" class="main-nav-link">O nas</a></li>
+          <li><a href="#storitve" class="main-nav-link">Storitve</a></li>
+          <li><a href="#ponudba" class="main-nav-link">Ponudba</a></li>
           <li><a href="#cenik" class="main-nav-link">Cenik</a></li>
           <li><a href="#izleti" class="main-nav-link">Ekskluzivno</a></li>
           <li><a href="#cta" class="main-nav-link nav-cta">Rezerviraj</a></li>
@@ -82,6 +83,32 @@
         </div>
       </section>
 
+      <section class="about-section" id="about">
+        <div class="container">
+          <span class="subheading">O nas</span>
+          <h2 class="heading-secondary">
+            Na igriv, poučen, športen način do uspehov
+          </h2>
+          <div class="grid grid--2-cols about-grid">
+            <div class="about-description">
+              <div class="about-description-part">Ideja o ustanovitvi podjetja ki se ukvarja z učenjem in animacijo otrok v svojem domačem
+              kraju je prisotna že lep čas. Rad bi, da otroci več časa preživljajo s sovrstniki, v naravi, se
+              igrajo in posledično marsikaj naučijo. V šoli športa otroke naučimo plavati, smučati, rolati,
+              igrati tenis, a hkrati znamo izpolniti vsako otroško željo. Ponujamo tudi dva programa
+              otroških praznovanj, kjer se otroci zabavajo, starši pa brez skrbi uživajo ob kavi.</div>
+              <div class="about-description-part">S Fickom
+              skočimo na enodnevni izlet po Sloveniji, skupaj pa tudi preživljamo aktivne počitnice. Z vašo
+              podporo pa verjamem da se bo naša paleta znanj ter storitev le še širila.
+              Ficko ekipa je podkrepljena z zahtevanimi znanji, izkušnjami ter veseljem do dela z otroci.
+              Vsi učitelji se za šport katerega učijo ustrezno licencirani.</div>
+               
+            </div>
+            <div class="about-img">
+              <img src="img/logo.png" alt="Ficko logo">
+            </div>
+          </div>
+        </section>
+
       <section class="storitev-section" id="storitve">
         <div class="container">
           <span class="subheading">Storitve pri Ficku</span>
@@ -97,9 +124,10 @@
               <div class="card-text-box">
                 <h3 class="heading-tertiary">Praznuj z nami</h3>
                 <p class="card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur aperiam numquam corrupti. Consectetur magni eum
-                  dolor animi, esse molestias aperiam explicabo.
+                  Končno je tukaj tvoj rojstni dan! Da bo le ta zate nepozaben
+                  in pol smeha ter veselja poskrbi Ficko! Povabi svoje
+                  prijatelje in izberi svoj program praznovanja. Potrebuješ le
+                  športno opremo in obutev.
                 </p>
               </div>
             </div>
@@ -128,276 +156,431 @@
 
       <section class="praznovanja-section" id="ponudba">
         <div class="container">
-          <span class="subheading">Praznovanja</span>
-          <h2 class="heading-secondary">Izbiraj med programi praznovanja</h2>
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="step-text-box">
-              <p class="step-number">01</p>
-              <h2 class="heading-secondary margin-bottom-md underline">
-                FICKO
-              </h2>
-              <p class="step-description">
-                Raznovrsten športni program, miselne igre, igre z žogami,
-                elementarne in športne igre, štafetne igre ter presenečenje!
-              </p>
-              <ul class="list">
-                <span class="subheading">Kaj vsebuje program:</span>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span
-                    >90min animacije (po želji lahko dodamo 30min.) ✔️</span
-                  >
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Pogostitev (pizza ali Pommes & Nuggets). 🍕🍟</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Pijača za vse udeležence. 🥤</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Rojstnodnevno darilo.🎁</span>
-                </li>
-              </ul>
-            </div>
-            <div class="gallery">
-              <figure class="gallery-item">
-                <img src="/img/cake.webp" alt="Torta" class="step-img" />
-              </figure>
-              <figure class="gallery-item">
-                <img src="/img/kids.webp" alt="otroci" class="step-img" />
-              </figure>
-            </div>
+          <span class="subheading">Ponudba pri Fickotu</span>
+          <h2 class="heading-secondary margin-bottom-md">
+            Izbiraj med našo pestro ponudbo
+          </h2>
+          <aside class="praznovanja-text margin-bottom-md">
+            Navigiraj po željenem programu (praznovanja, smučanje, plavanje, tenis...) s klikom na spodnje gumbe. 😎😃
+          </aside>
+          <div class="program-pick">
+            <button class="btn btn--full" id="btn-praznovanje">
+             🎈 Praznovanja 🎉
+            </button>
+            <button class="btn btn--full" id="btn-smucanje">❄ Smučanje 🎿</button>
+            <button class="btn btn--full" id="btn-plavanje">🏊🏼‍♀️ Plavanje 🥽</button>
+            <button class="btn btn--full" id="btn-tenis">🥎 Tenis 🎾</button>
           </div>
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="gallery second">
-              <figure class="gallery-item">
-                <img src="/img/nerf1.webp" alt="Nefr zabava" class="step-img" />
-              </figure>
-              <figure class="gallery-item">
-                <img src="/img/nerf2.webp" alt="Nerf zabava" class="step-img" />
-              </figure>
+
+          <div class="text-box"></div>
+
+          <div class="view" id="praznovanje-section">
+            <span class="subheading">Praznovanja</span>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  FICKO
+                </h2>
+                <p class="step-description">
+                  Raznovrsten športni program, miselne igre, igre z žogami,
+                  elementarne in športne igre, štafetne igre ter presenečenje!
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span
+                      >90min animacije (po želji lahko dodamo 30min.) ✔️</span
+                    >
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Pogostitev (pizza ali Pommes & Nuggets). 🍕🍟</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Pijača za vse udeležence. 🥤</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Rojstnodnevno darilo.🎁</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <figure class="gallery-item">
+                  <img src="/img/cake.webp" alt="Torta" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/kids.webp" alt="otroci" class="step-img" />
+                </figure>
+              </div>
             </div>
-            <div class="step-text-box">
-              <p class="step-number">02</p>
-              <h2 class="heading-secondary margin-bottom-md underline">NERF</h2>
-              <p class="step-description">
-                Raznovrsten športni program, miselne igre, igre z žogo,
-                bayblade, tekmuj v ciljanju tarč ter se pomeri v lovu na zastavo
-                z NERF pištolami
-              </p>
-              <ul class="list">
-                <span class="subheading">Kaj vsebuje program:</span>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span
-                    >90min animacije (po želji lahko dodamo 30min.) ✔️</span
-                  >
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Pogostitev (pizza ali Pommes & Nuggets). 🍕🍟</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Pijača za vse udeležence. 🥤</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Rojstnodnevno darilo.🎁</span>
-                </li>
-              </ul>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="gallery second">
+                <figure class="gallery-item">
+                  <img
+                    src="/img/nerf1.webp"
+                    alt="Nefr zabava"
+                    class="step-img"
+                  />
+                </figure>
+                <figure class="gallery-item">
+                  <img
+                    src="/img/nerf2.webp"
+                    alt="Nerf zabava"
+                    class="step-img"
+                  />
+                </figure>
+              </div>
+              <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  NERF
+                </h2>
+                <p class="step-description">
+                  Raznovrsten športni program, miselne igre, igre z žogo,
+                  bayblade, tekmuj v ciljanju tarč ter se pomeri v lovu na
+                  zastavo z NERF pištolami
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span
+                      >90min animacije (po želji lahko dodamo 30min.) ✔️</span
+                    >
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Pogostitev (pizza ali Pommes & Nuggets). 🍕🍟</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Pijača za vse udeležence. 🥤</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Rojstnodnevno darilo.🎁</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cta-button">
+              <a href="#cta" class="btn btn--full margin-right-sm">Rezerviraj</a>
             </div>
           </div>
 
-          <span class="subheading margin-top-md">Športna šola</span>
-          <h2 class="heading-secondary">Izbiraj med programi smučanja</h2>
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="step-text-box">
-              <p class="step-number">01</p>
-              <h2 class="heading-secondary margin-bottom-md underline">
-                Smučarski vrtec
-              </h2>
-              <p class="step-description">
-                Organiziramo smučarski vrtec za otroke od 4 let starosti ter
-                vsem, ki še nikoli niso bili na smučeh. Na zabaven in igriv
-                način naučimo otroke spoznati smučarsko opremo, jo pravilno
-                namestiti, spoznamo smučarska pravila, se naučimo prvih zavojev,
-                pravilnega zaustavljanja ter pravilnega ravnanja ob morebitnem
-                padcu.
-              </p>
-              <ul class="list">
-                <span class="subheading">Kaj vsebuje program:</span>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Štiri dni po dve uri smučanja. ✔️</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Čaj in okrepčilo. ☕🍔</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Možnost izposoje opreme. ❄🎿</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Diploma za uspeh. 🏆</span>
-                </li>
-              </ul>
+          <div class="view hide" id="smucanje-section">
+            <span class="subheading">Smučanje</span>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  Smučarski vrtec
+                </h2>
+                <p class="step-description">
+                  Organiziramo smučarski vrtec za otroke od 4 let starosti ter
+                  vsem, ki še nikoli niso bili na smučeh. Na zabaven in igriv
+                  način naučimo otroke spoznati smučarsko opremo, jo pravilno
+                  namestiti, spoznamo smučarska pravila, se naučimo prvih
+                  zavojev, pravilnega zaustavljanja ter pravilnega ravnanja ob
+                  morebitnem padcu.
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Štiri dni po dve uri smučanja. ✔️</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Čaj in okrepčilo. ☕🍔</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Možnost izposoje opreme. ❄🎿</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Diploma za uspeh. 🏆</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <figure class="gallery-item">
+                  <img src="/img/ski1.webp" alt="Smučanje" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/ski2.webp" alt="Smučanje" class="step-img" />
+                </figure>
+              </div>
             </div>
-            <div class="gallery">
-              <figure class="gallery-item">
-                <img src="/img/ski1.webp" alt="Smučanje" class="step-img" />
-              </figure>
-              <figure class="gallery-item">
-                <img src="/img/ski2.webp" alt="Smučanje" class="step-img" />
-              </figure>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="gallery second">
+                <figure class="gallery-item">
+                  <img src="/img/ski3.webp" alt="Smučanje" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/ski4.webp" alt="Smučanje" class="step-img" />
+                </figure>
+              </div>
+              <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  Individualni tečaj
+                </h2>
+                <p class="step-description">
+                  Namenjen je vsem ki so že seznanjeni z osnovami smučanja ter z
+                  željo po napredku. Naučimo se prave paralelne tehnike
+                  smučanja, pravilne drže, vključevanja na vlečnico/sedežnico
+                  ter prehod iz le te.
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Dve uri smučanja pod nadzorom učitelja. ✔️</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Čaj in okrepčilo. ☕🍔</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Možnost izposoje opreme. ❄🎿</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Končna ocena napredka in nasvet. 🏆</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="gallery second">
-              <figure class="gallery-item">
-                <img src="/img/ski3.webp" alt="Smučanje" class="step-img" />
-              </figure>
-              <figure class="gallery-item">
-                <img src="/img/ski4.webp" alt="Smučanje" class="step-img" />
-              </figure>
-            </div>
-            <div class="step-text-box">
-              <p class="step-number">02</p>
-              <h2 class="heading-secondary margin-bottom-md underline">
-                Individualni tečaj
-              </h2>
-              <p class="step-description">
-                Namenjen je vsem ki so že seznanjeni z osnovami smučanja ter z
-                željo po napredku. Naučimo se prave paralelne tehnike smučanja,
-                pravilne drže, vključevanja na vlečnico/sedežnico ter prehod iz
-                le te.
-              </p>
-              <ul class="list">
-                <span class="subheading">Kaj vsebuje program:</span>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Dve uri smučanja pod nadzorom učitelja. ✔️</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Čaj in okrepčilo. ☕🍔</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Možnost izposoje opreme. ❄🎿</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Končna ocena napredka in nasvet. 🏆</span>
-                </li>
-              </ul>
+            <div class="cta-button">
+              <a href="#cta" class="btn btn--full margin-right-sm">Rezerviraj</a>
             </div>
           </div>
 
-          <span class="subheading margin-top-md">Športna šola</span>
-          <h2 class="heading-secondary">Na voljo poleti 2022</h2>
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="step-text-box">
-              <p class="step-number">01</p>
-              <h2 class="heading-secondary margin-bottom-md underline">
-                Šola tenisa
-              </h2>
-              <p class="step-description">
-                Otroci se v tem obdobju učijo spoznavati teniško igro, osnovne
-                teniške udarce in osnovno gibanje. Razvijajo motorične
-                sposobnosti in spoznavajo zelo lep individualen šport. Za
-                loparje in vse ostale rekvizite poskrbimo mi.
-              </p>
-              <ul class="list">
-                <span class="subheading">Kaj vsebuje program:</span>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>5 x 90 minut tenisa. ✔️</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Razvoj teniške tehnike. 🎾</span>
-                </li>
-                <li class="list-item">
-                  <ion-icon
-                    class="list-icon"
-                    name="checkmark-outline"
-                  ></ion-icon
-                  ><span>Vso opremo priskrbimo mi. 😎</span>
-                </li>
-                <li class="list-item">
-                  <span>Kdaj: Poleti 2022, Kje: Teniška igrišča Lenart</span>
-                </li>
-              </ul>
+          <div class="view hide" id="plavanje-section">
+            <span class="subheading">Plavanje</span>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  Začetni tečaj
+                </h2>
+                <p class="step-description">
+                  V Fickovi plavalni šoli lahko izbirate med dvema vrstama
+                  plavalnih tečajev za otroke. Naše poslanstvo je otroke naučiti
+                  plavanja skozi pozitivno izkušnjo. Glavna prioriteta je, da se
+                  vsakemu posamezniku individualno posvetimo in prilagodimo
+                  vadbo njegovim zmožnostim.
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Individualiziran pristop. ✔️</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Zabaven način učenja plavanja. 🏊🏼‍♀️🎈</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Učenje v majhnih skupinah.</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Prilagodljivost učenja glede na skupino.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <figure class="gallery-item">
+                  <img src="/img/swim1.webp" alt="Plavanje" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/swim2.webp" alt="Plavanje" class="step-img" />
+                </figure>
+              </div>
             </div>
-            <div class="gallery">
-              <figure class="gallery-item">
-                <img src="/img/tenis1.webp" alt="Smučanje" class="step-img" />
-              </figure>
-              <figure class="gallery-item">
-                <img src="/img/tenis2.webp" alt="Smučanje" class="step-img" />
-              </figure>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="gallery second">
+                <figure class="gallery-item">
+                  <img src="/img/swim4.webp" alt="Plavanje" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/swim3.webp" alt="Plavanje" class="step-img" />
+                </figure>
+              </div>
+              <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  Nadaljevalni tečaj
+                </h2>
+                <p class="step-description">
+                  Namenjen je vsem ki so že seznanjeni z osnovami smučanja ter z
+                  željo po napredku. Naučimo se prave paralelne tehnike
+                  smučanja, pravilne drže, vključevanja na vlečnico/sedežnico
+                  ter prehod iz le te.
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Dve uri smučanja pod nadzorom učitelja. ✔️</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Čaj in okrepčilo. ☕🍔</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Možnost izposoje opreme. ❄🎿</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Končna ocena napredka in nasvet. 🏆</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cta-button">
+              <a href="#cta" class="btn btn--full margin-right-sm">Rezerviraj</a>
             </div>
           </div>
+
+          <div class="view hide" id="tenis-section">
+            <span class="subheading">Tenis</span>
+            <div class="container grid grid--2-cols grid--center-v">
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h2 class="heading-secondary margin-bottom-md underline">
+                  Šola tenisa
+                </h2>
+                <p class="step-description">
+                  Otroci se v tem obdobju učijo spoznavati teniško igro, osnovne
+                  teniške udarce in osnovno gibanje. Razvijajo motorične
+                  sposobnosti in spoznavajo zelo lep individualen šport. Za
+                  loparje in vse ostale rekvizite poskrbimo mi.
+                </p>
+                <ul class="list">
+                  <span class="subheading">Kaj vsebuje program:</span>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>5 x 90 minut tenisa. ✔️</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Razvoj teniške tehnike. 🎾</span>
+                  </li>
+                  <li class="list-item">
+                    <ion-icon
+                      class="list-icon"
+                      name="checkmark-outline"
+                    ></ion-icon
+                    ><span>Vso opremo priskrbimo mi. 😎</span>
+                  </li>
+                  <li class="list-item">
+                    <span>Kdaj: Poleti 2022, Kje: Teniška igrišča Lenart</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery">
+                <figure class="gallery-item">
+                  <img src="/img/tenis1.webp" alt="Smučanje" class="step-img" />
+                </figure>
+                <figure class="gallery-item">
+                  <img src="/img/tenis2.webp" alt="Smučanje" class="step-img" />
+                </figure>
+              </div>
+            </div>
+            <div class="cta-button">
+              <a href="#cta" class="btn btn--full margin-right-sm">Rezerviraj</a>
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -475,7 +658,14 @@
         </div>
 
         <div
-          class="container grid grid--2-cols margin-bottom-md second-price hide"
+          class="
+            container
+            grid grid--2-cols
+            margin-bottom-md
+            second-price
+            hide
+            animation
+          "
         >
           <div class="cenik-plan cenik-plan--zacetni">
             <header class="plan-header">
@@ -513,14 +703,14 @@
           <div class="cenik-plan cenik-plan--popoln">
             <header class="plan-header">
               <p class="plan-name">Individualno smučanje</p>
-              <p class="plan-cena"><span>€</span>160</p>
+              <p class="plan-cena"><span>€</span>27</p>
               <p class="plan-text">Cena vključuje</p>
             </header>
 
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>120 minut smučanja</span>
+                ><span>60 minut smučanja</span>
               </li>
 
               <li class="list-item">
@@ -544,20 +734,88 @@
           </div>
         </div>
 
+        <div class="container grid grid--2-cols margin-bottom-md third-price hide">
+          <div class="cenik-plan cenik-plan--zacetni">
+            <header class="plan-header">
+              <p class="plan-name">Plavanje</p>
+              <p class="plan-cena"><span>€</span>140</p>
+              <p class="plan-text">Začetni tečaj (4 do 6 let starosti)</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>90 minut animacije</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>30 minut pogostitve</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Hrana in pijača za vse</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                <span>Največ 12 povabljencev</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#" class="btn btn--full">Rezerviraj termin</a>
+            </div>
+          </div>
+
+          <div class="cenik-plan cenik-plan--popoln">
+            <header class="plan-header">
+              <p class="plan-name">Plavanje</p>
+              <p class="plan-cena"><span>€</span>160</p>
+              <p class="plan-text">Nadaljevalni tečaj (od 6 let dalje)</p>
+            </header>
+
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>90 minut animacije</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>30 minut pogostitve</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Hrana in pijača za vse</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Nad 12 povabljencev</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#" class="btn btn--full">Rezerviraj termin</a>
+            </div>
+          </div>
+        </div>
+
         <div
           class="
             container
             grid grid--2-cols
             margin-bottom-md
             end-align
-            third-price
+            fourth-price
             hide
           "
         >
           <div class="cenik-plan cenik-plan--popoln">
             <header class="plan-header">
               <p class="plan-name">Šola tenisa</p>
-              <p class="plan-cena"><span>€</span>160</p>
+              <p class="plan-cena"><span>€</span>100</p>
               <p class="plan-text">Cena vključuje</p>
             </header>
 
@@ -587,11 +845,13 @@
             </div>
           </div>
         </div>
+
         <div class="container flex">
           <div class="dots">
             <a href="" class="dot-one active"></a>
             <a href="" class="dot-two"></a>
             <a href="" class="dot-three"></a>
+            <a href="" class="dot-four"></a>
           </div>
         </div>
 
@@ -615,7 +875,7 @@
             <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
             <p class="feature-title">Pogostitev</p>
             <p class="feature-text">
-              Na voljo so neomejene količine hrane in pijače.
+              Izbiraj med pico, nuggetsi, in prinesi svojo torto!
             </p>
           </div>
 
@@ -626,8 +886,8 @@
             ></ion-icon>
             <p class="feature-title">Kdo zabava</p>
             <p class="feature-text">
-              Za zabavo in varstvo, bodo poskrbeli ljudje z dolgoletnimi
-              izkušnjami.
+              Za zabavo in varnost, bodo poskrbele naše izkušnje in ustrezno
+              znanje.
             </p>
           </div>
         </div>
@@ -768,6 +1028,7 @@
                     <option value="">Izberi možnost</option>
                     <option value="friends">Praznovati</option>
                     <option value="ad">Smučati</option>
+                    <option value="insta">Plavati</option>
                     <option value="insta">Igrati tenis</option>
                     <option value="others">Na izlet</option>
                   </select>
@@ -798,7 +1059,7 @@
                   />
                 </div>
 
-                <button class="btn btn--form">Pošlji</button>
+                <button class="btn btn--form">Pošlji ✉</button>
               </form>
             </div>
             <div
@@ -847,14 +1108,14 @@
             <address class="contacts">
               <p class="address">FICKO s.p.</p>
               <p class="address">
-                Lokacija praznovanja: Industrijska 8, 2230 Lenart v Slov.
+                Lokacija praznovanja: Industrijska 44, 2230 Lenart v Slov.
                 goricah
               </p>
               <p>
-                <a class="footer-link" href="tel:030-643-305">030-643-305</a
+                <a class="footer-link" href="tel:030-643-305">☎ 030-643-305</a
                 ><br />
                 <a class="footer-link" href="mailto:zabavasfickom@gmail.com"
-                  >zabavasfickom@gmail.com</a
+                  >✉ zabavasfickom@gmail.com</a
                 >
               </p>
             </address>
@@ -862,6 +1123,7 @@
           <nav class="nav-col">
             <p class="footer-heading">Navigiraj</p>
             <ul class="footer-nav">
+              <li><a class="footer-link" href="#about">O nas</a></li>
               <li><a class="footer-link" href="#storitve">Storitve</a></li>
               <li><a class="footer-link" href="#ponudba">Ponudba</a></li>
               <li><a class="footer-link" href="#cenik">Cenik</a></li>
