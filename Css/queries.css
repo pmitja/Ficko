@@ -213,6 +213,9 @@
 /************************************/
 
 @media (max-width: 34em) {
+  body {
+    overflow: hidden;
+  }
   .grid {
     row-gap: 4.8rem;
   }
@@ -280,5 +283,10 @@
 
   .about-img img {
     width: 50%;
+  }
+
+  .program-pick {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }

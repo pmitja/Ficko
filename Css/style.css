@@ -163,7 +163,8 @@
 }
 
 .program-pick {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2.4rem;
   margin-bottom: 9.6rem;
 }
