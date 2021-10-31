@@ -126,11 +126,51 @@
 }
 
 /************************************/
+/* ABOUT SECTION */
+/************************************/
+
+.about-section {
+  margin-bottom: 12.8rem;
+}
+
+.about-grid {
+  grid-template-columns: 3fr 1fr;
+}
+
+.about-description {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-description-part {
+  margin-bottom: 2.4rem;
+}
+/************************************/
 /* STORITEV SECTION */
 /************************************/
 
 .storitev-section {
   margin-bottom: 12.8rem;
+}
+
+.praznovanja-text {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.program-pick {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.program-pick button {
+  background-color: #fcc419;
+  color: #333;
 }
 
 .card {
@@ -184,6 +224,16 @@
 .card-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+.cta-button {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-button a {
+  width: 300px;
+  text-align: center;
 }
 
 /************************************/
@@ -346,7 +396,8 @@
 
 .dot-one,
 .dot-two,
-.dot-three {
+.dot-three,
+.dot-four {
   height: 25px;
   width: 25px;
   border: 3px solid #fcc419;
