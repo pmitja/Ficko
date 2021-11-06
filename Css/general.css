@@ -193,6 +193,13 @@ body {
 
 .hide {
   display: none;
+  opacity: 0;
+  transition: opacity 300ms;
+  animation: scale-display 3s;
+}
+
+.block {
+  display: block;
 }
 
 .btn--form {
@@ -203,4 +210,8 @@ body {
 
 .btn--form:hover {
   background-color: #fff;
+}
+
+.justify-start {
+  justify-self: start !important;
 }
