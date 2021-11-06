@@ -180,11 +180,13 @@ const praznovanjeSection = document.querySelector("#praznovanje-section");
 const smucanjeSection = document.querySelector("#smucanje-section");
 const plavanjeSection = document.querySelector("#plavanje-section");
 const tenisSection = document.querySelector("#tenis-section");
+const izletiSection = document.querySelector("#izleti-section");
 
 const praznovanjeBtn = document.querySelector("#btn-praznovanje");
 const smucanjeBtn = document.querySelector("#btn-smucanje");
 const plavanjeBtn = document.querySelector("#btn-plavanje");
 const tenisBtn = document.querySelector("#btn-tenis");
+const izletiBtn = document.querySelector("#btn-izleti");
 
 praznovanjeBtn.addEventListener("click", () => {
   const viewPlace = document.querySelector(".text-box");
@@ -193,6 +195,7 @@ praznovanjeBtn.addEventListener("click", () => {
   smucanjeSection.classList.add("hide");
   plavanjeSection.classList.add("hide");
   tenisSection.classList.add("hide");
+  izletiSection.classList.add("hide");
 });
 
 smucanjeBtn.addEventListener("click", () => {
@@ -202,6 +205,7 @@ smucanjeBtn.addEventListener("click", () => {
   smucanjeSection.classList.remove("hide");
   plavanjeSection.classList.add("hide");
   tenisSection.classList.add("hide");
+  izletiSection.classList.add("hide");
 });
 
 plavanjeBtn.addEventListener("click", () => {
@@ -211,6 +215,7 @@ plavanjeBtn.addEventListener("click", () => {
   smucanjeSection.classList.add("hide");
   plavanjeSection.classList.remove("hide");
   tenisSection.classList.add("hide");
+  izletiSection.classList.add("hide");
 });
 
 tenisBtn.addEventListener("click", () => {
@@ -220,4 +225,15 @@ tenisBtn.addEventListener("click", () => {
   smucanjeSection.classList.add("hide");
   plavanjeSection.classList.add("hide");
   tenisSection.classList.remove("hide");
+  izletiSection.classList.add("hide");
+});
+
+izletiBtn.addEventListener("click", () => {
+  const viewPlace = document.querySelector(".text-box");
+  viewPlace.append(izletiSection);
+  praznovanjeSection.classList.add("hide");
+  smucanjeSection.classList.add("hide");
+  plavanjeSection.classList.add("hide");
+  izletiSection.classList.remove("hide");
+  tenisSection.classList.add("hide");
 });
