@@ -241,10 +241,6 @@
 /* PRAZNOVANJA SECTION */
 /************************************/
 
-.praznovanja-section {
-  margin-bottom: 12.8rem;
-}
-
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
@@ -629,4 +625,39 @@
 .footer-link:active,
 .footer-link:hover {
   color: #555;
+}
+
+.features {
+  margin-top: 4.8rem;
+}
+
+/************************************/
+/* Scroll up */
+/************************************/
+.scrollup {
+  position: fixed;
+  background: #fcc419;
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 10px;
+  z-index: 1001;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.scrollup__icon {
+  font-size: 3rem;
+  color: #333;
+}
+
+.scrollup:hover {
+  background: #ffec99;
+  opacity: 1;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
 }

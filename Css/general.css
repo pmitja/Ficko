@@ -215,3 +215,16 @@ body {
 .justify-start {
   justify-self: start !important;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fcc419;
+}
+
+.swiper {
+  padding: 0 3.8rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fcc419;
+}
