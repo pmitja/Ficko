@@ -75,165 +75,41 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
-///////////////////////////////////////////////////////////
-// Buttons under price
-
-const dot1 = document.querySelector(".dot-one");
-const dot2 = document.querySelector(".dot-two");
-const dot3 = document.querySelector(".dot-three");
-const dot4 = document.querySelector(".dot-four");
-
-const first = document.querySelector(".first-price");
-const second = document.querySelector(".second-price");
-const third = document.querySelector(".third-price");
-const fourth = document.querySelector(".fourth-price");
-
-dot1.addEventListener("click", () => {
-  if (dot2.classList.contains("active")) {
-    dot2.classList.remove("active");
-    dot1.classList.add("active");
-  }
-
-  if (dot3.classList.contains("active")) {
-    dot3.classList.remove("active");
-    dot1.classList.add("active");
-  }
-
-  if (dot4.classList.contains("active")) {
-    dot4.classList.remove("active");
-    dot1.classList.add("active");
-  }
-  second.classList.add("hide");
-  third.classList.add("hide");
-  first.classList.remove("hide");
-  fourth.classList.add("hide");
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
 });
 
-dot2.addEventListener("click", () => {
-  if (dot1.classList.contains("active")) {
-    dot1.classList.remove("active");
-    dot2.classList.add("active");
-  }
+sr.reveal(`.cenik-section, .izleti-section`);
+sr.reveal(`.praznovanja-section, .about-section, .footer__content`, {
+  interval: 100,
+});
+sr.reveal(`.storitev-section, .section-cta`, { origin: "left" });
+sr.reveal(`.hero-section, .features`, { origin: "right" });
 
-  if (dot3.classList.contains("active")) {
-    dot3.classList.remove("active");
-    dot2.classList.add("active");
-  }
-
-  if (dot4.classList.contains("active")) {
-    dot4.classList.remove("active");
-    dot2.classList.add("active");
-  }
-
-  second.classList.remove("hide");
-  third.classList.add("hide");
-  first.classList.add("hide");
-  fourth.classList.add("hide");
+let newSwiper = new Swiper(".new-swiper", {
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: "true",
+  spaceBetween: 70,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: "true",
+  },
 });
 
-dot3.addEventListener("click", () => {
-  if (dot1.classList.contains("active")) {
-    dot1.classList.remove("active");
-    dot3.classList.add("active");
-  }
-
-  if (dot2.classList.contains("active")) {
-    dot2.classList.remove("active");
-    dot3.classList.add("active");
-  }
-
-  if (dot4.classList.contains("active")) {
-    dot4.classList.remove("active");
-    dot3.classList.add("active");
-  }
-
-  second.classList.add("hide");
-  third.classList.remove("hide");
-  first.classList.add("hide");
-  fourth.classList.add("hide");
-});
-
-dot4.addEventListener("click", () => {
-  if (dot1.classList.contains("active")) {
-    dot1.classList.remove("active");
-    dot4.classList.add("active");
-  }
-  if (dot3.classList.contains("active")) {
-    dot3.classList.remove("active");
-    dot4.classList.add("active");
-  }
-
-  if (dot2.classList.contains("active")) {
-    dot2.classList.remove("active");
-    dot4.classList.add("active");
-  }
-  second.classList.add("hide");
-  third.classList.add("hide");
-  first.classList.add("hide");
-  fourth.classList.remove("hide");
-});
-
-///////////////////////////////////////////////////////////
-// Buttons for sections
-
-const praznovanjeSection = document.querySelector("#praznovanje-section");
-const smucanjeSection = document.querySelector("#smucanje-section");
-const plavanjeSection = document.querySelector("#plavanje-section");
-const tenisSection = document.querySelector("#tenis-section");
-const izletiSection = document.querySelector("#izleti-section");
-
-const praznovanjeBtn = document.querySelector("#btn-praznovanje");
-const smucanjeBtn = document.querySelector("#btn-smucanje");
-const plavanjeBtn = document.querySelector("#btn-plavanje");
-const tenisBtn = document.querySelector("#btn-tenis");
-const izletiBtn = document.querySelector("#btn-izleti");
-
-praznovanjeBtn.addEventListener("click", () => {
-  const viewPlace = document.querySelector(".text-box");
-  viewPlace.append(praznovanjeSection);
-  praznovanjeSection.classList.remove("hide");
-  smucanjeSection.classList.add("hide");
-  plavanjeSection.classList.add("hide");
-  tenisSection.classList.add("hide");
-  izletiSection.classList.add("hide");
-});
-
-smucanjeBtn.addEventListener("click", () => {
-  const viewPlace = document.querySelector(".text-box");
-  viewPlace.append(smucanjeSection);
-  praznovanjeSection.classList.add("hide");
-  smucanjeSection.classList.remove("hide");
-  plavanjeSection.classList.add("hide");
-  tenisSection.classList.add("hide");
-  izletiSection.classList.add("hide");
-});
-
-plavanjeBtn.addEventListener("click", () => {
-  const viewPlace = document.querySelector(".text-box");
-  viewPlace.append(plavanjeSection);
-  praznovanjeSection.classList.add("hide");
-  smucanjeSection.classList.add("hide");
-  plavanjeSection.classList.remove("hide");
-  tenisSection.classList.add("hide");
-  izletiSection.classList.add("hide");
-});
-
-tenisBtn.addEventListener("click", () => {
-  const viewPlace = document.querySelector(".text-box");
-  viewPlace.append(tenisSection);
-  praznovanjeSection.classList.add("hide");
-  smucanjeSection.classList.add("hide");
-  plavanjeSection.classList.add("hide");
-  tenisSection.classList.remove("hide");
-  izletiSection.classList.add("hide");
-});
-
-izletiBtn.addEventListener("click", () => {
-  const viewPlace = document.querySelector(".text-box");
-  viewPlace.append(izletiSection);
-  praznovanjeSection.classList.add("hide");
-  smucanjeSection.classList.add("hide");
-  plavanjeSection.classList.add("hide");
-  izletiSection.classList.remove("hide");
-  tenisSection.classList.add("hide");
-});
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  console.log(scrollUp);
+  // When the scroll is higher than 460 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 460) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
