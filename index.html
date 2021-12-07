@@ -1058,11 +1058,12 @@
                 za vse ostalo bomo poskrbeli mi!
               </p>
 
-              <form action="#" class="cta-form">
+              <form action="https://formsubmit.co/zabavasfickom@gmail.com" method="POST" class="cta-form">
                 <div>
                   <label for="full-name">Ime in priimek</label>
                   <input
                     type="text"
+                    name='name'
                     placeholder="Ime in priimek"
                     id="full-name"
                     required
@@ -1072,7 +1073,8 @@
                 <div>
                   <label for="email">Elektronski naslov</label>
                   <input
-                    type="email"
+                    type="email" 
+                    name="email"
                     placeholder="Elektronski naslov"
                     id="email"
                     required
@@ -1081,7 +1083,7 @@
 
                 <div>
                   <label for="select-where">Želim si:</label>
-                  <select id="select-where" required>
+                  <select name="what" id="select-where" required>
                     <option value="">Izberi možnost</option>
                     <option value="friends">Praznovati</option>
                     <option value="ad">Smučati</option>
@@ -1095,7 +1097,7 @@
                   <label for="select-where"
                     >Kdo vam je povedal za Fickota?</label
                   >
-                  <select id="select-where" required>
+                  <select name='where' id="select-where" required>
                     <option value="">Izberi možnost</option>
                     <option value="friends">Prijatelji</option>
                     <option value="ad">Facebook oglas</option>
@@ -1110,13 +1112,11 @@
                     type="date"
                     id="start"
                     name="trip-start"
-                    value="2020-01-01"
-                    min="2020-01-01"
-                    max="2021-12-31"
+                    value="today"
                   />
                 </div>
 
-                <button class="btn btn--form">Pošlji</button>
+                <button type="submit" class="btn btn--form">Pošlji</button>
               </form>
             </div>
             <div
